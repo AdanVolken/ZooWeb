@@ -1,0 +1,308 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.8em;}
+h3{font-size: 2.2em;}
+p{font-size: 1.5em;}
+ul{list-style: none;}
+
+button{
+    border-radius: 10px;
+    background-color: rgba(50, 200, 19);
+    padding: 5px 30px;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);    
+    color: white;
+}
+button:hover{
+    background-color: rgb(43, 166, 18);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+ header{
+    background-color: rgb(243,243,243);
+ }
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color:rgba(50, 200, 19) ;
+    font-size: 1.5em;
+}
+header .container{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 7px 12px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+header a:hover{
+    color:rgba(50, 200, 19) ;
+}
+
+
+#hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    )
+    ,url("img/zoo-principal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+
+.color{
+    color:rgba(50, 200, 19);
+}
+
+
+#hero-two .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+
+#hero-tres{
+    background-color: rgb(10,10,10);
+    color: white;
+    text-align:center;
+}
+
+#hero-tres .container{
+   padding: 150px 12px;
+}
+
+#hero-tres h2{
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+#hero-tres p{
+    display: none;
+}
+
+#hero-tres .cartas{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 15px;
+    padding: 20px 20px;
+    margin: 16px;
+}
+
+
+.cartas:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    )
+    ,url("img/mamifero.jpg");
+    
+}
+
+.cartas:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    )
+    ,url("img/ave.jpg");
+
+}
+
+.cartas:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    )
+    ,url("img/python.jpg");
+   
+}
+
+#hero-four .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#hero-four li{
+   margin: 15px 0px;
+   font-weight: bold;
+}
+
+#hero-five{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgb(15,15,15);
+    color: white;
+    height: 80vh;
+}
+
+#hero-five h2{
+    font-size: 7vw;
+}
+
+#hero-five button{
+    font-size: 3vw;
+}
+
+footer{
+    background-color: rgb(243,243,243);
+}
+
+footer p{
+    margin: 0;
+    padding: 13px;
+    color: rgb(130,130,130);
+}
+footer .container{    
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 1000px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    header nav{
+        padding-bottom: 0;
+        flex-direction: row;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #hero-two .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #hero-two .texto{
+        width: 50%;
+        text-align:initial;
+        padding-left: 30px;
+        max-width: 600px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    #hero-two h2{
+        margin-top: 0;
+    }
+
+    #hero-two .img-container{
+        background-image:linear-gradient(
+            0deg,
+            rgb(0,0,0,0.5),
+            rgb(0,0,0,0.5)
+        ) ,url("img/mami.jpg");
+        background-position: center center;
+        background-size: cover;
+        width: 600px;
+        height: 500px;
+    }
+
+    #hero-tres .programas{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+
+    #hero-tres h2{
+        font-size: 4em;
+    }
+
+
+    #hero-tres p{
+        display: block;
+        text-align: center;
+    }
+
+    #hero-tres .cartas{
+        box-shadow: 2px 2px 10px rgb(57, 57, 57);
+    }
+
+    #hero-four{
+        background-image: url("img/comportamiento.jpg");
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position:right;
+        margin:50px 100px
+    }
+
+    #hero-four .container{
+        text-align: initial;  
+        
+    }
+    #hero-four ul{
+        margin-left: 100px;
+    }
+}
+
+@media (min-width: 1300px) {
+    #hero-four{
+        background-size: 700px 600px;
+    }
+}
